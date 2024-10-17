@@ -1,22 +1,14 @@
 import React from 'react'
 import Navbar from '../Section/Navbar'
 import Banner from '../Section/Banner'
+import AboutUs from '../Section/AboutUs'
 const Home = () => {
   return (
     <>
     <Navbar />
     <Banner />
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
-    fg eigweboifbwefioebfnewipfojelnf;weklfe
+    <AboutUs />
+   
     </>
   )
 }

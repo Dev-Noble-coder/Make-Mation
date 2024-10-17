@@ -10,17 +10,25 @@ const Navbar = () => {
   // State to manage navbar background color and fixed position
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // State to manage the text color of links
+  const [isLinkBlack, setIsLinkBlack] = useState(false);
+
   // Function to handle closing the menu
   const closeMenu = () => setIsMenuOpen(false);
 
   // Add scroll event listener to detect when the user scrolls
   useEffect(() => {
     const handleScroll = () => {
-      // If scrolled more than 50px, set isScrolled to true
-      if (window.scrollY > 30) {
+      // If scrolled more than 100px (height of the screen), set isScrolled to true
+      if (window.scrollY > window.innerHeight) {
+        
+        setIsLinkBlack(true); // Change link color to black after scrolling
+      }else if(window.scrollY > 20){
         setIsScrolled(true);
+        setIsLinkBlack(false);
       } else {
         setIsScrolled(false);
+         // Change link color back to white
       }
     };
 
@@ -34,34 +42,33 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className=" fixed top-0 w-full z-50">
+    <div className="fixed top-0 w-full z-50">
       {/* Main Navbar */}
-      <div className={`flex justify-between sm:justify-around items-center py-7 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg backdrop-blur-md bg-opacity-70' : 'bg-transparent'}`}>
-  {/* Logo */}
-  <div className="NavLogo">
-    <Link to="/" className={`font-bold text-3xl ${isScrolled ? 'text-yellow-400 ' : 'text-yellow-400'}`}>MAKE MATION</Link>
-  </div>
+      <div className={`flex justify-between lg:justify-around items-center py-7 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg backdrop-blur-md bg-opacity-70' : 'bg-transparent'}`}>
+        {/* Logo */}
+        <div className="NavLogo">
+          <Link to="/" className={`font-bold text-3xl ${isScrolled ? 'text-yellow-400' : 'text-yellow-400'}`}>MAKE MATION</Link>
+        </div>
 
-  {/* Links for larger screens */}
-  <div className="NavLink hidden sm:block text-white ">
-    <nav className="flex gap-5 text-xl">
-      <Link to="/">Home</Link>
-      <Link to="/about-movie">About The Movie</Link>
-      <Link to="/about-author">About The Author</Link>
-      <Link to="/gallery">Gallery</Link>
-    </nav>
-  </div>
+        {/* Links for larger screens */}
+        <div className={`NavLink hidden lg:block ${isLinkBlack ? 'text-black' : 'text-white'}`}>
+          <nav className="flex gap-5 text-xl">
+            <Link to="/">Home</Link>
+            <Link to="/about-movie">About The Movie</Link>
+            <Link to="/about-author">About The Author</Link>
+            <Link to="/gallery">Gallery</Link>
+          </nav>
+        </div>
 
-  {/* Hamburger Icon for smaller screens */}
-  <div className="sm:hidden">
-    <FontAwesomeIcon 
-      icon={faBars} 
-      className="text-2xl cursor-pointer text-white" 
-      onClick={() => setIsMenuOpen(true)} // Open menu when clicked
-    />
-  </div>
-</div>
-
+        {/* Hamburger Icon for smaller screens */}
+        <div className="lg:hidden">
+          <FontAwesomeIcon 
+            icon={faBars} 
+            className="text-2xl cursor-pointer bg-yellow-400 text-white px-3 py-3 rounded-full" 
+            onClick={() => setIsMenuOpen(true)} // Open menu when clicked
+          />
+        </div>
+      </div>
 
       {/* Overlay for the sliding menu (shown only when menu is open) */}
       {isMenuOpen && (

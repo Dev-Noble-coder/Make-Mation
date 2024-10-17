@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import imgOne from '../../assets/imgOne.jpg';
 import imgTwo from '../../assets/imgTwo.jpg';
 import imgThree from '../../assets/imgThree.jpg';
@@ -64,6 +64,9 @@ const Banner = () => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
+      {/* Dark overlay starting from tablets (md) */}
+      <div className="absolute inset-0 bg-black opacity-60 block z-0"></div>
+
       {/* Banner Content */}
       <div className='text-center text-white z-10'>
         <div className='max-w-xl px-6'>
@@ -103,9 +106,6 @@ const Banner = () => {
           ></button>
         ))}
       </div>
-
-      {/* Overlay to darken background */}
-      <div className='absolute inset-0 bg-black bg-opacity-50 z-0'></div>
     </div>
   );
 };

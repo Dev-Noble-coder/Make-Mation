@@ -71,7 +71,7 @@ const Banner = () => {
           <p className='text-base sm:text-xl mb-5'>
             "Experience the future of storytelling—Toyosi's groundbreaking AI-powered movie awaits."
           </p>
-          <button className='bg-blue-500 text-white px-5 py-2 rounded-md'>
+          <button className='bg-yellow-500 text-white px-7 py-3 rounded-sm text-xl hover:bg-transparent hover:border hover:border-yellow-400 transition-all'>
             Stream Here
           </button>
         </div>

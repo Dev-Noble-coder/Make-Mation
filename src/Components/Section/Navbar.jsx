@@ -36,31 +36,32 @@ const Navbar = () => {
   return (
     <div className=" fixed top-0 w-full z-50">
       {/* Main Navbar */}
-      <div className={`flex justify-between sm:justify-around items-center py-5 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg bg-white ' : 'bg-transparent'}`}>
-        {/* Logo */}
-        <div className="NavLogo">
-          <Link to="/" className="font-bold text-3xl">MAKE MATION</Link>
-        </div>
+      <div className={`flex justify-between sm:justify-around items-center py-7 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg backdrop-blur-md bg-opacity-70' : 'bg-transparent'}`}>
+  {/* Logo */}
+  <div className="NavLogo">
+    <Link to="/" className={`font-bold text-3xl ${isScrolled ? 'text-yellow-400 ' : 'text-yellow-400'}`}>MAKE MATION</Link>
+  </div>
 
-        {/* Links for larger screens */}
-        <div className="NavLink hidden sm:block">
-          <nav className="flex gap-5 text-xl">
-            <Link to="/">Home</Link>
-            <Link to="/about-movie">About The Movie</Link>
-            <Link to="/about-author">About The Author</Link>
-            <Link to="/gallery">Gallery</Link>
-          </nav>
-        </div>
+  {/* Links for larger screens */}
+  <div className="NavLink hidden sm:block text-white ">
+    <nav className="flex gap-5 text-xl">
+      <Link to="/">Home</Link>
+      <Link to="/about-movie">About The Movie</Link>
+      <Link to="/about-author">About The Author</Link>
+      <Link to="/gallery">Gallery</Link>
+    </nav>
+  </div>
 
-        {/* Hamburger Icon for smaller screens */}
-        <div className="sm:hidden">
-          <FontAwesomeIcon 
-            icon={faBars} 
-            className="text-2xl cursor-pointer" 
-            onClick={() => setIsMenuOpen(true)} // Open menu when clicked
-          />
-        </div>
-      </div>
+  {/* Hamburger Icon for smaller screens */}
+  <div className="sm:hidden">
+    <FontAwesomeIcon 
+      icon={faBars} 
+      className="text-2xl cursor-pointer text-white" 
+      onClick={() => setIsMenuOpen(true)} // Open menu when clicked
+    />
+  </div>
+</div>
+
 
       {/* Overlay for the sliding menu (shown only when menu is open) */}
       {isMenuOpen && (
@@ -76,7 +77,7 @@ const Navbar = () => {
         <div className="flex justify-end p-5">
           <FontAwesomeIcon 
             icon={faTimes} 
-            className="text-2xl cursor-pointer"
+            className="text-3xl cursor-pointer bg-yellow-400 px-3 py-2 rounded-full text-white"
             onClick={closeMenu} // Close menu when clicked
           />
         </div>

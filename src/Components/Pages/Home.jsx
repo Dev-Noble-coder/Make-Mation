@@ -6,6 +6,7 @@ import MeetDirector from '../Section/MeetDirector'
 import Gallery from '../Section/Gallery'
 import Premiere from '../Section/Premiere'
 import Newsletter from '../Section/Newsletter'
+import Footer from '../Section/Footer'
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
     <Gallery />
     <Premiere />
     <Newsletter />
-   
+    <Footer />
     </>
   )
 }

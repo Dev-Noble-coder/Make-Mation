@@ -70,7 +70,7 @@ const Banner = () => {
       {/* Banner Content */}
       <div className='text-center text-white z-10'>
         <div className='max-w-xl px-6'>
-          <h2 className=' text-4xl sm:text-5xl font-bold mb-5'>MAKE MATION</h2>
+          <h2 className=' text-4xl sm:text-5xl lg:text-7xl font-bold mb-5'>MAKE <span className='text-yellow-400'>MATION</span> </h2>
           <p className='text-base sm:text-xl mb-5'>
             "Experience the future of storytelling—Toyosi's groundbreaking AI-powered movie awaits."
           </p>

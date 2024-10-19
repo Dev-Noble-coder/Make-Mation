@@ -7,6 +7,7 @@ import Gallery from '../Section/Gallery'
 import Premiere from '../Section/Premiere'
 import Newsletter from '../Section/Newsletter'
 import Footer from '../Section/Footer'
+import ScrollToTop from '../Section/ScrollToTop'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     <Premiere />
     <Newsletter />
     <Footer />
+    <ScrollToTop />
     </>
   )
 }

@@ -64,7 +64,7 @@ const Banner = () => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Dark overlay starting from tablets (md) */}
+     
       <div className="absolute inset-0 bg-black opacity-60 block z-0"></div>
 
       {/* Banner Content */}

@@ -15,12 +15,13 @@ const Footer = () => {
 
                 <div className='pb-5'>
 
-                    <p className='text-gray-900 text-xl'>Copyright &copy 2024, <span className='text-2xl font-bold text-gray-900'>MAKE <span className='text-yellow-400'>MATION</span></span></p>
+                    <p className='text-gray-900 text-base sm:text-xl'>Copyright © 2024, <span className='text-2xl font-bold text-gray-900'>MAKE <span className='text-yellow-400'>MATION</span></span></p>
                 </div>
-                <div className='sm:flex justify-center gap-1 sm:gap-3 text-xl text-gray-900 grid grid-cols-1'>
+                <div className='sm:flex justify-center gap-1 sm:gap-3 text-base sm:text-xl text-gray-900 grid grid-cols-2'>
                     <p className='sm:border-r-2 pr-1 sm:pr-3 border-gray-900'>Legal Policy</p>
                     <p className='sm:border-r-2 pr-1 sm:pr-3 border-gray-900'>Privacy Policy</p>
-                    <p>Manage Cookies</p>
+                    <p className='sm:border-r-2 pr-1 sm:pr-3 border-gray-900'>Manage Cookies</p>
+                    <p>Ownership</p>
                 </div>
             </div>
 

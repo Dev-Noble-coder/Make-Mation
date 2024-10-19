@@ -50,7 +50,7 @@ const Navbar = () => {
 
         {/* Links for larger screens */}
         <div className={`NavLink hidden lg:block ${isLinkBlack ? 'text-black' : 'text-white'}`}>
-          <nav className="flex gap-5 text-xl">
+          <nav className="flex gap-10 text-xl">
             <Link to="/">Home</Link>
             <Link to="/about-movie">About The Movie</Link>
             <Link to="/about-author">About The Author</Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
       )}
 
       {/* Sliding menu (visible only on small screens) */}
-      <div className={`fixed top-0 right-0 w-2/3 h-full bg-white z-20 transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 w-2/3 h-full bg-gray-100 z-20 transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close button */}
         <div className="flex justify-end p-5">
           <FontAwesomeIcon 
@@ -88,11 +88,11 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links */}
-        <nav className="flex flex-col pl-5 gap-5 mt-10">
-          <Link to="/" className="text-lg" onClick={closeMenu}>Home</Link>
-          <Link to="/about-movie" className="text-lg" onClick={closeMenu}>About The Movie</Link>
-          <Link to="/about-author" className="text-lg" onClick={closeMenu}>About The Author</Link>
-          <Link to="/gallery" className="text-lg" onClick={closeMenu}>Gallery</Link>
+        <nav className="flex flex-col pl-5 text-xl gap-5 mt-10">
+          <Link to="/" className="py-3 "  onClick={closeMenu}>Home</Link>
+          <Link to="/about-movie" className="py-3" onClick={closeMenu}>About The Movie</Link>
+          <Link to="/about-author" className="py-3"   onClick={closeMenu}>About The Author</Link>
+          <Link to="/gallery" className="py-3"  onClick={closeMenu}>Gallery</Link>
         </nav>
       </div>
     </div>

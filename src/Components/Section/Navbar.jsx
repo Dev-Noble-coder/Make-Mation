@@ -52,8 +52,8 @@ const Navbar = () => {
         <div className={`NavLink hidden lg:block ${isLinkBlack ? 'text-black' : 'text-white'}`}>
           <nav className="flex gap-10 text-xl">
             <Link to="/">Home</Link>
-            <Link to="/about-movie">About The Movie</Link>
-            <Link to="/about-author">About The Author</Link>
+            <Link to="/aboutTheMovie">About The Movie</Link>
+            <Link to="/aboutTheAuthor">About The Author</Link>
             <Link to="/gallery">Gallery</Link>
           </nav>
         </div>
@@ -90,8 +90,8 @@ const Navbar = () => {
         {/* Nav Links */}
         <nav className="flex flex-col pl-5 text-xl gap-5 mt-10">
           <Link to="/" className="py-3 "  onClick={closeMenu}>Home</Link>
-          <Link to="/about-movie" className="py-3" onClick={closeMenu}>About The Movie</Link>
-          <Link to="/about-author" className="py-3"   onClick={closeMenu}>About The Author</Link>
+          <Link to="/aboutTheMovie" className="py-3" onClick={closeMenu}>About The Movie</Link>
+          <Link to="/aboutTheAuthor" className="py-3"   onClick={closeMenu}>About The Author</Link>
           <Link to="/gallery" className="py-3"  onClick={closeMenu}>Gallery</Link>
         </nav>
       </div>

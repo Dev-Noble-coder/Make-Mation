@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from '../Section/Navbar'
+import Banner from '../Section/Banner'
 
 const AboutMovie = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Navbar />
+    <Banner name = 'About The Movie' />
+    </>
   )
 }
 

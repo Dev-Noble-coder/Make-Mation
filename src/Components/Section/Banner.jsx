@@ -10,7 +10,7 @@ const images = [
   imgThree,
 ];
 
-const Banner = () => {
+const Banner = ({name}) => {
   // State to manage current slide
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -70,12 +70,12 @@ const Banner = () => {
       {/* Banner Content */}
       <div className='text-center text-white z-10'>
         <div className='max-w-xl px-6'>
-          <h2 className=' text-4xl sm:text-5xl lg:text-7xl font-bold mb-5'>MAKE <span className='text-yellow-400'>MATION</span> </h2>
+          <h2 className=' text-4xl sm:text-5xl lg:text-6xl font-bold mb-5'>{name} </h2>
           <p className='text-base sm:text-xl mb-5'>
             "Experience the future of storytelling—Toyosi's groundbreaking AI-powered movie awaits."
           </p>
           <button className='bg-yellow-500 text-white px-7 py-3 rounded-sm text-xl hover:bg-transparent hover:border hover:border-yellow-400 transition-all'>
-            Stream Here
+            Watch Trailer
           </button>
         </div>
       </div>

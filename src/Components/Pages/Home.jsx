@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <Banner />
+    <Banner name = 'MAKE MATION' />
     <AboutUs />
     <MeetDirector />
     <Gallery />

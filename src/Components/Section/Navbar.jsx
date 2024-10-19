@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 w-full z-50">
       {/* Main Navbar */}
-      <div className={`flex justify-between lg:px-10 items-center py-7 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg bg-white lg:px-10 ' : 'bg-transparent'}`}>
+      <div className={`flex justify-between lg:px-10 items-center py-5 sm:py-7 px-5 transition-colors duration-300 ${isScrolled ? 'fixed top-0 w-full bg-peach shadow-lg bg-white lg:px-10 ' : 'bg-transparent'}`}>
         {/* Logo */}
         <div className="NavLogo">
           <Link to="/" className={`font-bold text-3xl ${isScrolled ? 'text-yellow-400' : 'text-yellow-400'}`}>MAKE MATION</Link>

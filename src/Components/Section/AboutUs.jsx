@@ -3,6 +3,7 @@ import imgGridOne from '../../assets/imgGridOne.png';
 import imgGridTwo from '../../assets/imgGridTwo.png';
 import imgGridThree from '../../assets/imgGridThree.png';
 import imgGridFour from '../../assets/imgGridFour.png';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
     const images = [imgGridOne, imgGridTwo, imgGridThree, imgGridFour];
@@ -17,7 +18,7 @@ const AboutUs = () => {
                     <h2 className='text-2xl font-semibold pb-2'>Make Mation" – A Film by Toyosi Akerele Ogunsiji</h2>
                     <p className='text-xl leading-8 sm:leading-10'>Step into a groundbreaking world where artificial intelligence meets human creativity. Directed by visionary filmmaker Toyosi Akerele Ogunsiji, "The AI Revolution" takes you on an unforgettable journey through a future shaped by technology, innovation, and the power of human connection. Experience a cinematic masterpiece like no other, where AI isn't just the story—it’s part of the creation.</p>
                     <p className='text-xl leading-8 sm:leading-10 mb-5'>In this cinematic masterpiece, audiences will explore a universe where AI evolves beyond mere programming, becoming a collaborator in the artistic process. Through stunning visuals and a compelling narrative, the film challenges our perceptions of what it means to create, highlighting the delicate balance between human intuition and technological advancement.</p>
-                    <button className='bg-yellow-400 py-5 px-14 text-white text-xl font-semibold rounded-sm'>Learn More</button>
+                    <Link to='/aboutTheMovie'><button className='bg-yellow-400 py-5 px-14 text-white text-xl font-semibold rounded-sm'>Learn More</button></Link>
                 </div>
                 <div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">

@@ -77,7 +77,7 @@ const Navbar = () => {
       )}
 
       {/* Sliding menu (visible only on small screens) */}
-      <div className={`fixed top-0 right-0 w-2/3 h-full bg-gray-100 z-20 transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0  h-full bg-gray-100 z-20 transform transition-transform duration-300 w-full ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close button */}
         <div className="flex justify-end p-5">
           <FontAwesomeIcon 
@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links */}
-        <nav className="flex flex-col pl-5 text-xl gap-5 mt-10">
+        <nav className="flex flex-col justify-center items-center pl-5 text-xl gap-5 mt-10 ">
           <Link to="/" className="py-3 "  onClick={closeMenu}>Home</Link>
           <Link to="/aboutTheMovie" className="py-3" onClick={closeMenu}>About The Movie</Link>
           <Link to="/aboutTheAuthor" className="py-3"   onClick={closeMenu}>About The Author</Link>

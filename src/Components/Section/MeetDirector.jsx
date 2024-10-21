@@ -12,8 +12,8 @@ const MeetDirector = () => {
             <div className=' grid grid-cols-1 lg:grid-cols-2 place-items-center mt-10 sm:mt-16 gap-5'>
                 <div>
                     <h3 className='text-2xl font-semibold pb-2'>Toyosi Akerele Ogunsiji</h3>
-                    <p className='text-xl leading-8 sm:leading-10'>Toyosi Akerele-Ogunsiji born Oluwatoyosi Akerele, 8 November 1983 is a Nigerian social entrepreneur and human development expert whose work cuts across entrepreneurship, education, youth development and public leadership. She is the founder and chief executive officer of Rise Networks, a Nigeria-based private and public sector funded clarification needed Youth Interest social enterprise.</p>
-                    <p className='text-xl leading-8 sm:leading-10 pb-5'>She is the director of the movie called <span className='text-2xl font-bold'>MAKE <span className='text-yellow-400'>MATION</span></span></p>
+                    <p className='text-xl leading-10'>Toyosi Akerele-Ogunsiji born Oluwatoyosi Akerele, 8 November 1983 is a Nigerian social entrepreneur and human development expert whose work cuts across entrepreneurship, education, youth development and public leadership. She is the founder and chief executive officer of Rise Networks, a Nigeria-based private and public sector funded clarification needed Youth Interest social enterprise.</p>
+                    <p className='text-xl leading-10 pb-5'>She is the director of the movie called <span className='text-2xl font-bold'>MAKE <span className='text-yellow-400'>MATION</span></span></p>
                     <Link to='/aboutTheAuthor'><button className='bg-yellow-400 py-5 px-14 text-white text-xl font-semibold rounded-sm'>Learn More</button></Link>
                 </div>
                 <div>

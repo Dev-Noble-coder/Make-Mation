@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import imgOne from '../../assets/imgOne.jpg';
 import imgTwo from '../../assets/imgTwo.jpg';
 import imgThree from '../../assets/imgThree.jpg';
+import {Link} from 'react-router-dom'
 
 // Sample images for the slider
 const images = [
@@ -75,7 +76,9 @@ const Banner = ({name}) => {
             "Experience the future of storytelling—Toyosi's groundbreaking AI-powered movie awaits."
           </p>
           <button className='bg-yellow-500 text-white px-7 py-3 rounded-sm text-xl hover:bg-transparent hover:border hover:border-yellow-400 transition-all'>
+            <Link to= 'https://makemation.com/'>
             Watch Trailer
+            </Link>
           </button>
         </div>
       </div>

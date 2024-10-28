@@ -15,13 +15,13 @@ const MeetDirector = () => {
       <div className='py-16 mx-5 sm:mx-10'>
         {/* Section Title */}
         <motion.div
-          className='border-l-8 border-yellow-400 py-3 sm:py-5'
+          className='border-l-8 border-yellow-400 py-3 '
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }} // Trigger when 30% in view
           variants={fadeInUp}
         >
-          <h2 className='text-3xl sm:text-5xl font-semibold opacity-95 pl-3'>
+          <h2 className='text-xl font-semibold opacity-95 pl-3'>
             Meet The Mastermind
           </h2>
         </motion.div>
@@ -35,16 +35,16 @@ const MeetDirector = () => {
             viewport={{ once: true, amount: 0.3 }} // Trigger when 30% in view
             variants={fadeInUp}
           >
-            <h3 className='text-2xl font-semibold pb-2'>Toyosi Akerele Ogunsiji</h3>
-            <p className='text-xl leading-10'>
+            <h3 className='text-xl font-semibold pb-2'>Toyosi Akerele Ogunsiji</h3>
+            <p className='text-md leading-10'>
               Toyosi Akerele-Ogunsiji, born Oluwatoyosi Akerele on 8 November 1983, is a Nigerian social entrepreneur and human development expert whose work spans across entrepreneurship, education, youth development, and public leadership. She is the founder and CEO of Rise Networks, a Nigerian-based youth-interest social enterprise.
             </p>
-            <p className='text-xl leading-10 pb-5'>
-              She is the director of the movie called <span className='text-2xl font-bold'>MAKE <span className='text-yellow-400'>MATION</span></span>
+            <p className='text-md leading-10 pb-5'>
+              She is the director of the movie called <span className=' font-bold'>MAKE <span className='text-yellow-400'>MATION</span></span>
             </p>
             <Link to='/aboutTheAuthor'>
               <motion.button
-                className='bg-yellow-400 py-5 px-14 text-white text-xl font-semibold rounded-sm'
+                className='bg-yellow-400 py-2 px-5 text-white text-md font-semibold rounded-sm'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

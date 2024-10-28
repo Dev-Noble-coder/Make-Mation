@@ -10,7 +10,7 @@ const AbtMovie = () => {
   return (
     <div className='mx-5 sm:mx-10 my-20 font-montserrat'>
       <motion.h1
-        className='text-3xl font-semibold pb-2'
+        className='text-xl font-semibold pb-2'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5 }}
@@ -20,7 +20,7 @@ const AbtMovie = () => {
       </motion.h1>
 
       <motion.h2
-        className='text-2xl font-semibold pb-5'
+        className='text-xl font-semibold pb-5'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.1 }}
@@ -30,7 +30,7 @@ const AbtMovie = () => {
       </motion.h2>
 
       <motion.h3
-        className='text-2xl font-semibold'
+        className='text-xl font-semibold'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -40,7 +40,7 @@ const AbtMovie = () => {
       </motion.h3>
 
       <motion.p
-        className='text-xl pb-5'
+        className='text-md pb-5'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -50,7 +50,7 @@ const AbtMovie = () => {
       </motion.p>
 
       <motion.h3
-        className='text-2xl font-semibold pb-5'
+        className='text-xl font-semibold pb-5'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.4 }}
@@ -61,7 +61,7 @@ const AbtMovie = () => {
 
       {/* Logline paragraph */}
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -72,7 +72,7 @@ const AbtMovie = () => {
 
       {/* Rest of the paragraphs */}
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -81,7 +81,7 @@ const AbtMovie = () => {
         17-year-old Zara Sodangi isn’t having the best of times. Her welder father is a thorn in her flesh, and her akara-seller mother is barely bearing the burden of providing for the family. Zara’s friend in the hood challenges her to apply for a scholarship to Makemation.
       </motion.p>
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -90,7 +90,7 @@ const AbtMovie = () => {
        Makemation is not only the most prestigious tech institute in the country because of its 7-figure fees, but the opportunities accessible to its students and alums, and its standards are rigorously high and only for the best brains. Zara is convinced that she doesn’t qualify, but things get worse at home with her sick father and distressed mom, so Zara is determined to get selected into the entrance assessment Ideathon, which in her mind, is certainly a wild goose chase. She’s beyond shocked to not just be given admission into Makemation’s yearlong program, which earns the top graduating student a huge monetary prize.
       </motion.p>
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -99,7 +99,7 @@ const AbtMovie = () => {
          Zara is determined to win and reverse the fortunes of her family. But while Makemation is a beautiful campus with top-notch facilities and genius tutors, Zara’s classmates are standoffish to ‘the new poor girl.’ She struggles to fit in, hiding her poverty background and feigning a classy front. Soon, the mentorship of the good-natured and avant-garde Miss Zanzi, the school’s most loved and sought-after instructor, and of course, Zara’s sharp mind, helps her become the second smartest student. Gradually, she makes friends – but 20-year-old Anabelle Jenkins remains condescending to Zara.
       </motion.p>
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -108,7 +108,7 @@ const AbtMovie = () => {
           As Zara pivots into the world of Product Design, Data Analytics & Artificial Intelligence, she deals with conflicts on many fronts: worsening conditions at home, the antagonism of some classmates, social profiling, fear that she won’t win the best student award, and the struggle to keep up with the demanding lectures and take-home assignments. She manages to weather the storms, learn new things – not just about academic work, but about herself and about life – coming into her own as a young woman. But just as things start to look up for her, a string of unfortunate incidents knock Zara down.
       </motion.p>
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -120,7 +120,7 @@ const AbtMovie = () => {
 
       {/* Continue applying the animation for all other content */}
       <motion.h3
-        className='text-2xl font-semibold pb-5'
+        className='text-xl font-semibold pb-5'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.9 }}
@@ -130,7 +130,7 @@ const AbtMovie = () => {
       </motion.h3>
 
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 1.0 }}
@@ -140,7 +140,7 @@ const AbtMovie = () => {
       </motion.p>
 
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 1.1 }}
@@ -150,7 +150,7 @@ const AbtMovie = () => {
       </motion.p>
 
       <motion.p
-        className='text-xl pb-3 leading-8'
+        className='text-md pb-3 leading-8'
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, delay: 1.2 }}

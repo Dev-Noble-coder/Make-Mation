@@ -19,13 +19,13 @@ const AboutUs = () => {
         <div className='py-16 mx-5 sm:mx-10 '>
             {/* Section Title */}
             <motion.div 
-                className='border-l-8 border-yellow-400 py-3 sm:py-5'
+                className='border-l-8 border-yellow-400 py-3 '
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }} // Trigger when 30% in view
                 variants={fadeInUp}
             >
-                <h2 className='text-3xl sm:text-5xl font-semibold opacity-95 pl-3'>About The Movie</h2>
+                <h2 className='text-xl font-semibold opacity-95 pl-3'>About The Movie</h2>
             </motion.div>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 mt-10 sm:mt-16 gap-8'>
@@ -36,16 +36,16 @@ const AboutUs = () => {
                     viewport={{ once: true, amount: 0.3 }} // Trigger when 30% in view
                     variants={fadeInUp}
                 >
-                    <h2 className='text-2xl font-semibold pb-2'>Make Mation" – A Film by Toyosi Akerele Ogunsiji</h2>
-                    <p className='text-xl leading-10'>
+                    <h2 className='text-xl font-semibold pb-2'>Make Mation" – A Film by Toyosi Akerele Ogunsiji</h2>
+                    <p className='text-md leading-10'>
                         Step into a groundbreaking world where artificial intelligence meets human creativity. Directed by visionary filmmaker Toyosi Akerele Ogunsiji, "The AI Revolution" takes you on an unforgettable journey through a future shaped by technology, innovation, and the power of human connection. Experience a cinematic masterpiece like no other, where AI isn't just the story—it’s part of the creation.
                     </p>
-                    <p className='text-xl leading-10 mb-5'>
+                    <p className='text-md leading-10 mb-5'>
                         In this cinematic masterpiece, audiences will explore a universe where AI evolves beyond mere programming, becoming a collaborator in the artistic process. Through stunning visuals and a compelling narrative, the film challenges our perceptions of what it means to create, highlighting the delicate balance between human intuition and technological advancement.
                     </p>
                     <Link to='/aboutTheMovie'>
                         <motion.button 
-                            className='bg-yellow-400 py-5 px-14 text-white text-xl font-semibold rounded-sm'
+                            className='bg-yellow-400 py-2 px-5 text-white text-md font-semibold rounded-sm'
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >

@@ -34,10 +34,10 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 sm:right-4 right-2 bg-opacity-85 bg-yellow-400 text-white py-2 sm:py-5 px-3 sm:px-6 rounded-full shadow-lg transition-opacity duration-300 z-50"
+          className="fixed bottom-20 sm:right-4 right-2 bg-opacity-85 bg-yellow-400 text-white py-3 px-4 rounded-full shadow-lg transition-opacity duration-300 z-50"
           style={{ opacity: isVisible ? '1' : '0' }}
         >
-          <FontAwesomeIcon icon={faArrowUp} className='text-3xl' />
+          <FontAwesomeIcon icon={faArrowUp} className='text-xl' />
         </button>
       )}
     </div>

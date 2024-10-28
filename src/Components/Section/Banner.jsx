@@ -71,11 +71,11 @@ const Banner = ({name}) => {
       {/* Banner Content */}
       <div className='text-center text-white z-10'>
         <div className='max-w-xl px-6'>
-          <h2 className=' text-4xl sm:text-5xl lg:text-6xl font-bold mb-5'>{name} </h2>
-          <p className='text-base sm:text-xl mb-5'>
+          <h2 className=' text-3xl  font-bold mb-5'>{name} </h2>
+          <p className='text-md mb-5'>
             "Experience the future of storytelling—Toyosi's groundbreaking AI-powered movie awaits."
           </p>
-          <button className='bg-yellow-500 text-white px-7 py-3 rounded-sm text-xl hover:bg-transparent hover:border hover:border-yellow-400 transition-all'>
+          <button className='bg-yellow-500 text-white px-5 py-2 rounded-sm text-md hover:bg-transparent hover:border hover:border-yellow-400 transition-all'>
             <Link to= 'https://makemation.com/'>
             Watch Trailer
             </Link>

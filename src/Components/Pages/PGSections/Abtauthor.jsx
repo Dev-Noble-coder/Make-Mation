@@ -24,7 +24,7 @@ const Abtauthor = () => {
       >
         {/* Name and Intro */}
         <motion.h1
-          className="text-3xl font-bold leading-tight"
+          className="text-2xl font-bold leading-tight"
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
@@ -32,7 +32,7 @@ const Abtauthor = () => {
         </motion.h1>
 
         <motion.p
-          className="text-xl leading-relaxed"
+          className="text-md leading-relaxed"
           transition={{ duration: 0.5, delay: 0.1 }}
         >
            Toyosi Akerele-Ogunsiji (born Oluwatoyosi Akerele, 8 November 1983) is a Nigerian social entrepreneur and human development expert whose work cuts across entrepreneurship, education, youth development, and public leadership. She is the founder and chief executive officer of Rise Networks, a Nigeria-based Youth Interest social enterprise.
@@ -55,14 +55,14 @@ const Abtauthor = () => {
           variants={sectionVariants}
         >
           <motion.section>
-            <h2 className="text-2xl font-semibold leading-snug">Early Life and Education</h2>
-            <p className="leading-relaxed text-xl">
+            <h2 className="text-xl font-semibold leading-snug">Early Life and Education</h2>
+            <p className="leading-relaxed text-md">
             Akerele-Ogunsiji was born to the family of James Ayodele and Felicia Mopelola Akerele in Lagos State, Nigeria. She attended Ebun Oluwa Nursery and Primary School, Oregun Lagos, and later headed to Lagos State Model College Kankon Badagry, Lagos for her Junior Secondary Education from 1994 to 1996. She then proceeded to Egbado College (now Yewa College) from 1998 until June 2000 for her Senior Secondary Education, where she graduated as the best student in the Essay Competition organised by the Aionian Group of Schools in Ogun State.
             </p>
-            <p className="leading-relaxed  text-xl">
+            <p className="leading-relaxed  text-md">
           She obtained a Second Class Upper Degree in Civil Law from the University of Jos in April 2007. Akerele-Ogunsiji is a Mason Fellow and Mid-Career Master in Public Administration alumnus of the Harvard University Kennedy School of Government.
         </p>
-        <ul className="list-disc ml-5 leading-relaxed  text-xl">
+        <ul className="list-disc ml-5 leading-relaxed  text-md">
           <li>Studied Strategic Management at Executive Level at Cambridge University’s Judge Business School.</li>
           <li>Obtained a Certificate in Youth Inclusive Financial Services from University of New Hampshire, Durham, United States.</li>
           <li>Holds a Certificate in Media Enterprise from the School of Media and Communication, Pan Atlantic University.</li>
@@ -87,11 +87,11 @@ const Abtauthor = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
         >
-          <h2 className="text-2xl font-semibold leading-snug">Professional Career</h2>
-          <p className="leading-relaxed  text-xl">
+          <h2 className="text-xl font-semibold leading-snug">Professional Career</h2>
+          <p className="leading-relaxed  text-md">
           Akerele-Ogunsiji started her career in 2007 as a Corporate Communications and External Affairs Executive at Oando Oil and Gas PLC. She moved on to the Ministry of Youths and Social Development, Ogun State, Nigeria, where she served as the Special Assistant to the Honourable Commissioner on Youth Development before establishing Rise Human And Education Development Networks.
         </p>
-        <p className="leading-relaxed  text-xl">
+        <p className="leading-relaxed  text-md">
           She founded Passnownow in 2012, aimed at helping indigent and deprived secondary school children access curriculum-compliant education content through mobile devices. She also founded Printmagicng, a printing firm offering 24-hour low-cost printing services to small businesses via the Internet.
         </p>
         </motion.section>
@@ -103,8 +103,8 @@ const Abtauthor = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
         >
-          <h2 className="text-2xl font-semibold leading-snug">Family</h2>
-          <p className="leading-relaxed text-xl">
+          <h2 className="text-xl font-semibold leading-snug">Family</h2>
+          <p className="leading-relaxed text-md">
             In 2014, Akerele-Ogunsiji married Adekunle Ogunsiji, an ICT professional, in a low-key wedding at her family house in Ikeja, Lagos.
           </p>
         </motion.section>
@@ -116,8 +116,8 @@ const Abtauthor = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
         >
-          <h2 className="text-2xl font-semibold leading-snug">Publications</h2>
-          <ul className="list-disc ml-5 leading-relaxed  text-xl">
+          <h2 className="text-xl font-semibold leading-snug">Publications</h2>
+          <ul className="list-disc ml-5 leading-relaxed  text-md">
           <li>Strate-Tricks: Strategies and Tricks, the Winning Formula for Emerging Businesses</li>
           <li>We Have to Belong: Why the Poor Majority of my Rich Country Cannot Wait Anymore (Launched at Harvard Kennedy School in May 2017)</li>
         </ul>
@@ -130,8 +130,8 @@ const Abtauthor = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={sectionVariants}
         >
-          <h2 className="text-2xl font-semibold leading-snug">Awards, Appointments, and Recognition</h2>
-          <ul className="list-disc ml-5 leading-relaxed space-y-2  text-xl">
+          <h2 className="text-xl font-semibold leading-snug">Awards, Appointments, and Recognition</h2>
+          <ul className="list-disc ml-5 leading-relaxed space-y-2  text-md">
           <li>Selected as one of 101 Young African Leaders by the African Business Forum in 2007.</li>
           <li>Alumni of the Prestigious International Visitor Leadership Program of the United States Government.</li>
           <li>Recognition by Crans Montana Forum in Europe as a New Leader of Tomorrow.</li>

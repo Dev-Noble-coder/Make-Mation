@@ -17,13 +17,13 @@ const Gallery = () => {
     <div className='py-16 mx-5 sm:mx-10'>
       {/* Title Section */}
       <motion.div
-        className='border-l-8 border-yellow-400 py-3 sm:py-5'
+        className='border-l-8 border-yellow-400 py-3 '
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }} // Trigger when 30% in view
         variants={fadeInUp}
       >
-        <h2 className='text-3xl sm:text-5xl font-semibold opacity-95 pl-3'>Gallery</h2>
+        <h2 className='text-xl font-semibold opacity-95 pl-3'>Gallery</h2>
       </motion.div>
 
       {/* Gallery Images Section */}
@@ -44,7 +44,7 @@ const Gallery = () => {
                 className="w-full h-full object-cover transition-transform duration-300 transform hover:scale-105" 
               />
               <div className="cursor-pointer absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-xl sm:text-4xl font-semibold">See more</span>
+                <span className="text-white text-xl  font-semibold">See more</span>
               </div>
             </Link>
           </motion.div>
